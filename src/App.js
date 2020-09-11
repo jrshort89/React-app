@@ -40,6 +40,14 @@ class App extends Component {
     this.setState({showPersons: !doesShow});
   }
 
+  inputChangeHandler = (event) => {
+    this.setState({userInput: event.target.value});
+  }
+
+  deleteCharHandler = (charIndex) => {
+
+  }
+
   render() {
     const style = {
       backgroundColor: 'white',
